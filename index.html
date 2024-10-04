@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/index.css">
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+    
+    <header>
+        <div id="screen-navbar">
+            <a class="logo">
+                <img src="./assets/img/logo.png" alt="logo">
+            </a>
+            <div class="search-view">
+                <div class="search-bar">
+                    <div class="icon">
+                        <span class="iconify selected" data-icon="mdi:airplane-search"></span>
+                    </div>
+                    <div class="input">
+                        <input type="text" , id="search-input">
+                    </div>
+                </div>
+            </div>
+            <a href="./index.html">
+                <div class="my-location-button" , id="my-location-button">
+                    <span class="iconify selected" data-icon="ic:baseline-my-location"></span>
+                </div>
+            </a>
+        </div>
+
+        <div id="mobile-navbar">
+            <div class="search-view">
+                <div class="search-bar">
+                    <div class="icon">
+                        <span class="iconify selected" data-icon="mdi:airplane-search"></span>
+                    </div>
+                    <div class="input">
+                        <input type="text" , id="mobile-search-input">
+                    </div>
+                </div>
+            </div>
+            <div class="nav-icon" class="nav-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="mobile-menu" class="overlay">
+                <div class="overlay-content">
+                    <img src="./assets/img/logo.png" alt="">
+                    <a href="./index.html">Current Location</a>
+                    <a href="./html/about-us.html">Our Team</a>
+                    <a href="./html/contact-us.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/api.js"></script>
+<script src="./js/weather_model.js"></script>
+<script src="./js/fill_body.js"></script>
+<script src="./js/app.js"></script>
+
+</html>
